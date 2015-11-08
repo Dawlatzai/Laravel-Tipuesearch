@@ -1,0 +1,16 @@
+.tipue_search_content_title a {
+    color: #c3203f;
+
+}
+#tipue_search_content {
+    text-align: left;
+
+}
+
+#tipue_search_input {
+    background: #fff url('img/search.png') no-repeat 10px 15px;
+}
+
+.tipue_search_content_text {
+    margin-left: 20px;
+}

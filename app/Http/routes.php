@@ -12,3 +12,6 @@
 */
 Route::get('welcome','PagesController@welcome');
 Route::get('/','PagesController@index');
+Route::resource('/posts','PostsController');
+Route::resource('/about','AboutController');
+Route::resource('/search-content','TipueSearchController');

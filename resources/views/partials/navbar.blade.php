@@ -2,14 +2,14 @@
     <div class="nav-wrapper ">
         <a id="logo-container" href="#" class="brand-logo">&nbsp;&nbsp;Laravel-Tipuesearch</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Posts</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/posts') }}">Posts</a></li>
+            <li><a href="{{ url('/about') }}">About</a></li>
             <li>
                 <div class="nav-wrapper">
-                    <form>
+                    <form action="{{ url('search-content') }}">
                         <div class="input-field">
-                            <input id="search" type="search" required>
+                            <input type="search" name="q" id="tipue_search_input" required>
                             <label for="search"><i class="material-icons">search</i></label>
                             <i class="material-icons">close</i>
                         </div>
@@ -19,15 +19,15 @@
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Posts</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/posts') }}">Posts</a></li>
+            <li><a href="{{ url('/about') }}">About</a></li>
             <li>
-                <div class="nav-wrapper" style="height: 15%;">
-                    <form>
+                <div class="nav-wrapper" style="height: 7%;">
+                    <form action="{{ url('search-content') }}">
                         <div class="input-field search-wrapper">
-                            <input id="search" type="search" required>
-                            <label for="search"><i class="material-icons black-text">search</i></label>
+                            <input type="search" name="q" id="tipue_search_input" required>
+                            <label for="search" ><i class="material-icons text-black" >search</i></label>
                             <i class="material-icons">close</i>
                         </div>
                     </form>
